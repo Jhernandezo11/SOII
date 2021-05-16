@@ -51,6 +51,11 @@ public class Inicio extends javax.swing.JFrame {
                 jMenu2MouseClicked(evt);
             }
         });
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
 
         menuFCFS.setText("FCFS");
         menuFCFS.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -66,12 +71,22 @@ public class Inicio extends javax.swing.JFrame {
                 menuSJFMouseClicked(evt);
             }
         });
+        menuSJF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuSJFActionPerformed(evt);
+            }
+        });
         jMenu2.add(menuSJF);
 
         menuROUNDROBIN.setText("Round Robin");
         menuROUNDROBIN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuROUNDROBINMouseClicked(evt);
+            }
+        });
+        menuROUNDROBIN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuROUNDROBINActionPerformed(evt);
             }
         });
         jMenu2.add(menuROUNDROBIN);
@@ -107,11 +122,11 @@ public class Inicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1024, Short.MAX_VALUE)
+            .addGap(0, 702, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 747, Short.MAX_VALUE)
+            .addGap(0, 365, Short.MAX_VALUE)
         );
 
         pack();
@@ -119,38 +134,50 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
         // TODO add your handling code here:
-       
-                
+            
     }//GEN-LAST:event_jMenu2MouseClicked
 
     private void menuFCFSMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuFCFSMouseClicked
         // TODO add your handling code here:
         FCFS f=new FCFS();
-        f.show();
+        f.setVisible(true);
     }//GEN-LAST:event_menuFCFSMouseClicked
 
     private void menuSJFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuSJFMouseClicked
         // TODO add your handling code here:
         SJF f=new SJF();
-        f.show();
+        f.setVisible(true);
     }//GEN-LAST:event_menuSJFMouseClicked
 
     private void menuROUNDROBINMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuROUNDROBINMouseClicked
         // TODO add your handling code here:
-       
+        planificador rr = new planificador();
+        rr.setVisible(true);
     }//GEN-LAST:event_menuROUNDROBINMouseClicked
 
     private void jMenu12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu12MouseClicked
         // TODO add your handling code here:
         AcercaDe f=new AcercaDe();
-        f.show();
+        f.setVisible(true);
     }//GEN-LAST:event_jMenu12MouseClicked
 
     private void menuMEMORIAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuMEMORIAMouseClicked
         // TODO add your handling code here:
         Memoria f=new Memoria();
-        f.show();
+        f.setVisible(true);
     }//GEN-LAST:event_menuMEMORIAMouseClicked
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void menuROUNDROBINActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuROUNDROBINActionPerformed
+        
+    }//GEN-LAST:event_menuROUNDROBINActionPerformed
+
+    private void menuSJFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuSJFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuSJFActionPerformed
 
     /**
      * @param args the command line arguments
