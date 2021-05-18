@@ -58,7 +58,7 @@ public class AcercaDe extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel5.setText("UNIVERSIDA MARIANO GALVEZ DE GUATEMALA");
+        jLabel5.setText("UNIVERSIDAD MARIANO GALVEZ DE GUATEMALA");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
