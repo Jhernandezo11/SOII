@@ -20,6 +20,7 @@ public class GraficaBarras {
         }
         JFreeChart chart = ChartFactory.createBarChart(titulo,datah,datav,data, PlotOrientation.VERTICAL, false,
         true, false);
+       
         ChartFrame frame=new ChartFrame(titulo,chart);
         frame.pack();
         frame.setVisible(true);

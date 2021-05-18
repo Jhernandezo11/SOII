@@ -723,24 +723,24 @@ public class SJF extends javax.swing.JFrame {
                 }
 
                 //CALCULAMOS LOS TIEMPOS PROMEDIOS
-                tret1=Integer.parseInt(P[0])-Integer.parseInt(U[0]);
-                tret2=(Integer.parseInt(P[0])+Integer.parseInt(P[1]))-Integer.parseInt(U[1]);
-                tret3=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2]))-Integer.parseInt(U[2]);
-                tret4=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2])+Integer.parseInt(P[3]))-Integer.parseInt(U[3]);
+                tret1=Integer.parseInt(P[1])-Integer.parseInt(P[0]);
+                tret2=Integer.parseInt(P[2])+Integer.parseInt(P[1])-Integer.parseInt(U[1]);
+                tret3=Integer.parseInt(P[2])+Integer.parseInt(P[1])-Integer.parseInt(P[0]);
+                tret4=Integer.parseInt(P[0])-Integer.parseInt(P[0]);
                 tpret=(tret1+tret2+tret3+tret4)/4;
 
 
-                tres1=Integer.parseInt(P[0])-Integer.parseInt(U[0]);
-                tres2=(Integer.parseInt(P[0])+Integer.parseInt(P[1]))-Integer.parseInt(U[1]);
-                tres3=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2]))-Integer.parseInt(U[2]);
-                tres4=(Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2])+Integer.parseInt(P[3]))-Integer.parseInt(U[3]);
+                tres1=Integer.parseInt(U[3])+Integer.parseInt(P[3]);
+                tres2=(Integer.parseInt(P[3])+Integer.parseInt(P[0]));
+                tres3=(Integer.parseInt(P[3])+Integer.parseInt(P[0])+Integer.parseInt(U[0]));
+                tres4=(Integer.parseInt(P[3])+Integer.parseInt(P[0])+Integer.parseInt(U[0])+Integer.parseInt(P[2]));
                 tpres=(tres1+tres2+tres3+tres4)/4;
 
 
-                tesp1=0-Integer.parseInt(U[0]);
-                tesp2=Integer.parseInt(P[0])-Integer.parseInt(U[1]);
-                tesp3=Integer.parseInt(P[0])+Integer.parseInt(P[1])-Integer.parseInt(U[2]);
-                tesp4=Integer.parseInt(P[0])+Integer.parseInt(P[1])+Integer.parseInt(P[2])-Integer.parseInt(U[3]);
+                tesp1=Integer.parseInt(P[1])-Integer.parseInt(P[0]);
+                tesp2=Integer.parseInt(P[2])+Integer.parseInt(P[1])-Integer.parseInt(U[1]);
+                tesp3=Integer.parseInt(P[2])+Integer.parseInt(P[1])-Integer.parseInt(P[0]);
+                tesp4=Integer.parseInt(P[0])-Integer.parseInt(P[0]);
                 tpesp=(tesp1+tesp2+tesp3+tesp4)/4;
 
 
